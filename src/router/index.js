@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Mutation from "../views/Mutations.vue";
+import NProgress from "nprogress";
 
 Vue.use(VueRouter);
 
@@ -33,4 +34,13 @@ const router = new VueRouter({
   routes
 });
 
-export default router;
+router.beforeEach((routeTo, routeFrom, next) =>{
+  NProgress.start()
+  next()
+})
+
+router.afterEach(() =>{
+  NProgress.done()
+})
+
+export default router
