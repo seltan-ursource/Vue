@@ -1,7 +1,6 @@
 {
     "products": [
       {
-        "id": 1,
         "name": "HP Pavilion 15-ec0066ax",
         "price": "Rs.61,000/-",
         "description": "HP Pavilion 15-EC Ryzen 5 Quad Core - (8 GB/1 TB HDD/128 GB SSD/Windows 10 Home/3 GB Graphics/NVIDIA Geforce GTX 1050) 15-ec0062AX Gaming Laptop  (15.6 inch, Shadow Black, 2.19 kg)",
@@ -10,7 +9,6 @@
         "image":"https://rukminim1.flixcart.com/image/416/416/k3g73bk0/computer/x/4/h/hp-na-gaming-laptop-original-imafmcwzbga7kqaj.jpeg?q=70"
       },
       {
-        "id": 2,
         "name": "HP Notebook - 15-ay116tu",
         "price": "Rs.50,000/-",
         "description": "HP Notebook - 15-ay116tu with Intel® Core™ i5-7200U (2.5 GHz, up to 3.1 GHz, 3 MB cache, 2 cores), Touchpad with multi-touch gesture support and 1 HDMI; 1 headphone/microphone combo; 2 USB 2.0; 1 USB 3.1; 1 RJ-45",

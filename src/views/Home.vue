@@ -28,6 +28,7 @@
 
 <script>
 import axios from 'axios'
+import NProgress from 'nprogress'
 export default{
   data(){
     return{
@@ -35,11 +36,13 @@ export default{
     }
   },
   created(){
+    NProgress.start();
     axios
     .get('http://localhost:3000/products')
     .then(response =>{
       console.log(response.data);
       this.products = response.data
+      NProgress.done();
     })
     .catch(error =>{
     console.log('error' +error.response);
