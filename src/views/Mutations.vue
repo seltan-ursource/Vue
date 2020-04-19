@@ -2,11 +2,7 @@
   <div>
     <h1>Mutations & Actions Example</h1>
     <form @submit.prevent="createProduct">
-      <label>Select a category</label>
-      <select v-model="product.category">
-        <option v-for="cat in categories" :key="cat">{{ cat }}</option>
-      </select>
-
+      <BaseSelect label="Select a category" :options="categories" v-model="product.cqtegory"/>
       <h3>Name & describe your product</h3>
       <BaseInput label="Title" v-model="product.name"  type = "text" placeholder="Enter the Product Name" class="field"/>
       <BaseInput label="Description" v-model="product.description"  type = "text" placeholder="Add a description" class="field"/>
@@ -20,10 +16,12 @@
 
 <script>
 import BaseInput from "../components/BaseInput";
+import BaseSelect from "../components/BaseSelect";
 export default {
   name: 'ParentComponent',
   components: {
-    BaseInput
+    BaseInput,
+    BaseSelect
   },
   data() {
     return {
