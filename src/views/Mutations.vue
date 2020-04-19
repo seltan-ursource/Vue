@@ -9,7 +9,7 @@
       <BaseInput label="Price" v-model="product.price"  type = "text" placeholder="Add product Price" class="field"/>
       <h3>Product Brand?</h3>
       <BaseInput label="Brand" v-model="product.brand"  type = "text" placeholder="Add product Brand" class="field"/>
-      <BaseButton type="submit" >Submit</BaseButton>
+      <BaseButton type="submit" buttonClass="-fill-gradient">Submit</BaseButton>
     </form>
   </div>
 </template>
@@ -55,4 +55,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .button.-fill-gradient {
+      background: linear-gradient(to right, #16c0b0, #84cf6a);
+      color: #ffffff;
+    }
 </style>
