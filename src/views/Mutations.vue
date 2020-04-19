@@ -2,7 +2,7 @@
   <div>
     <h1>Mutations & Actions Example</h1>
     <form @submit.prevent="createProduct">
-      <BaseSelect label="Select a category" :options="categories" v-model="product.cqtegory"/>
+      <BaseSelect label="Select a category" :options="categories" v-model="product.category"/>
       <h3>Name & describe your product</h3>
       <BaseInput label="Title" v-model="product.name"  type = "text" placeholder="Enter the Product Name" class="field"/>
       <BaseInput label="Description" v-model="product.description"  type = "text" placeholder="Add a description" class="field"/>
