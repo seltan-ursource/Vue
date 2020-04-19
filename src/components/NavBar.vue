@@ -3,7 +3,8 @@
         <nav>
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link>|
-            <router-link to="/mutations">Mutations</router-link>
+            <router-link to="/mutations">Mutations</router-link>|
+            <router-link to="/example">Vuelidate</router-link>
         </nav>
     </div>
 </template>

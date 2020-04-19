@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Mutation from "../views/Mutations.vue";
 import NProgress from "nprogress";
 import NotFoundError from "../views/NotFound.vue";
+import Example from "../views/Example.vue";
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const routes = [
     path: "/404",
     name: "404",
     component: NotFoundError
+  },
+  {
+    path: "/example",
+    name: "example",
+    component: Example
   },
   {
     path : "*",
