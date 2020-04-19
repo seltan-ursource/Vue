@@ -9,7 +9,7 @@
       <BaseInput label="Price" v-model="product.price"  type = "text" placeholder="Add product Price" class="field"/>
       <h3>Product Brand?</h3>
       <BaseInput label="Brand" v-model="product.brand"  type = "text" placeholder="Add product Brand" class="field"/>
-      <input type="submit" value="Submit" />
+      <BaseButton type="submit" >Submit</BaseButton>
     </form>
   </div>
 </template>
@@ -17,11 +17,13 @@
 <script>
 import BaseInput from "../components/BaseInput";
 import BaseSelect from "../components/BaseSelect";
+import BaseButton from "../components/BaseButton";
 export default {
   name: 'ParentComponent',
   components: {
     BaseInput,
-    BaseSelect
+    BaseSelect,
+    BaseButton
   },
   data() {
     return {
