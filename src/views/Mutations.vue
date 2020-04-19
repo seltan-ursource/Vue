@@ -6,31 +6,25 @@
       <select v-model="product.category">
         <option v-for="cat in categories" :key="cat">{{ cat }}</option>
       </select>
+
       <h3>Name & describe your product</h3>
-      <div class="field">
-        <label>Title</label>
-        <input v-model="product.name" type="text" placeholder="Add an product title" />
-      </div>
-      <div class="field">
-        <label>Description</label>
-        <input v-model="product.description" type="text" placeholder="Add a description" />
-      </div>
-      <div class="field">
-        <label>Price</label>
-        <input v-model="product.price" type="text" placeholder="Add product Price" />
-      </div>
+      <BaseInput label="Title" v-model="product.name"  type = "text" placeholder="Enter the Product Name" class="field"/>
+      <BaseInput label="Description" v-model="product.description"  type = "text" placeholder="Add a description" class="field"/>
+      <BaseInput label="Price" v-model="product.price"  type = "text" placeholder="Add product Price" class="field"/>
       <h3>Product Brand?</h3>
-      <div class="field">
-        <label>Brand</label>
-        <input v-model="product.brand" type="text" placeholder="Add product Brand" />
-      </div>
-      <input type="submit" class="button -fill-gradient" value="Submit" />
+      <BaseInput label="Brand" v-model="product.brand"  type = "text" placeholder="Add product Brand" class="field"/>
+      <input type="submit" value="Submit" />
     </form>
   </div>
 </template>
 
 <script>
+import BaseInput from "../components/BaseInput";
 export default {
+  name: 'ParentComponent',
+  components: {
+    BaseInput
+  },
   data() {
     return {
       product: this.createNewProduct(),
